@@ -17,6 +17,19 @@ window.Vue = require('vue');
 
 Vue.component('example', require('./components/Example.vue'));
 
+import Multiselect from 'vue-multiselect'
+
+// register globally
+Vue.component(Multiselect)
+
 const app = new Vue({
-    el: '#app'
+  el: '#app',
+  // OR register locally
+  data () {
+    return {
+      value: null,
+      options: ['list', 'of', 'options']
+    }
+  }
 });
+

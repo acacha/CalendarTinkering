@@ -26,6 +26,8 @@ Route::group(['middleware' => 'auth'], function () {
 
     //Please do not remove this if you want adminlte:route and adminlte:link commands to works correctly.
     #adminlte_routes
+    Route::get('calendarlte', 'CalendarlteController@index')->name('calendarlte');
+
     Route::get('prova', function ()    {
         $data = [];
         return view('prova',$data);

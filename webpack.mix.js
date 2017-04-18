@@ -20,6 +20,8 @@ mix.js('resources/assets/js/app.js', 'public/js')
    .combine([
        'public/css/app.css',
        'node_modules/admin-lte/dist/css/skins/_all-skins.css',
+       'node_modules/fullcalendar/dist/fullcalendar.css',
+       'node_modules/fullcalendar/dist/fullcalendar.print.css',
        'public/css/adminlte-app.css',
        'node_modules/icheck/skins/square/blue.css',
        'public/css/toastr.css'

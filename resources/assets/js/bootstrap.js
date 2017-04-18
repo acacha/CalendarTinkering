@@ -8,13 +8,18 @@ window._ = require('lodash')
  * code may be modified to fit the specific needs of your application.
  */
 
-window.$ = window.jQuery = require('jquery')
+window.$ = window.jQuery = require('jquery');
 
 require('bootstrap-less')
 
 require('admin-lte')
 window.toastr = require('toastr')
 require('icheck')
+
+window.moment = require('moment')
+
+window.draggable = require('jquery-ui/ui/widgets/draggable')
+require('fullcalendar')
 
 /**
  * Vue is a modern JavaScript library for building interactive web interfaces
@@ -47,6 +52,10 @@ Vue.component('register-form', require('./components/auth/RegisterForm.vue'))
 Vue.component('login-form', require('./components/auth/LoginForm.vue'))
 Vue.component('email-reset-password-form', require('./components/auth/EmailResetPasswordForm.vue'))
 Vue.component('reset-password-form', require('./components/auth/ResetPasswordForm.vue'))
+
+Vue.component('full-calendar', require('./components/calendar/FullCalendar.vue'))
+Vue.component('calendar', require('./components/calendar/Calendar.vue'))
+Vue.component('calendar-events', require('./components/calendar/CalendarEvents.vue'))
 
 /**
  * Echo exposes an expressive API for subscribing to channels and listening
